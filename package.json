@@ -1,0 +1,34 @@
+{
+  "name": "Belajar Node.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "First.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Hello": "echo \"Hello World!\" ",
+    "server": "node First.js",
+    "loadexcel": "node readexcel.js",
+    "uploadfile": "node uploadfile.js",
+    "loadchatbot": "node chatbotserver.js",
+    "sendemail": "node sendemail.js",
+    "datatime": "node operationaltime.js",
+    "testtime": "node task1_operationaltime.js",
+    "testkoneksi": "node task2_dataquery.js",
+    "testpostdata": "node task3_datapost.js"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Made Agus Andi Gunawan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "formidable": "^2.0.1",
+    "jsonfile": "^6.1.0",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.7.8",
+    "prompt-sync": "^4.2.0",
+    "read-excel-file": "^5.5.0"
+  }
+}
