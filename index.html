@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Whirstband Anti Covid-19</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<header>
+		<h1>Smart Whristband IoT Monitoring</h1>
+        <table style="float:right">
+        <tr>
+            <th>
+            <label for="baterai">Baterai </label>
+            <meter id="baterai" value="0.6">60%</meter>
+            </th>
+        </tr>
+        </table>
+	</header>
+	<div class="top-wrapper">
+        <frameset cols="*,*,*,*">
+            <frame src="frame_2.html">
+            <frame src="frame_3.html">
+        </frameset>
+		<h2>Durasi Tahan Napas</h2>
+		<div class="progress" data-label="15 detik">
+			<span class="value" style="width: 27%;"></span>
+		</div>
+
+		<h2>Suhu Tubuh</h2>
+        <div class="gauge">
+			    <img src="images/gauge.png">
+		</div>
+		<h2>Kelembaban Udara Nafas</h2>
+        <div class="gauge">
+			    <img src="images/gauge.png">
+		</div>
+        <h2>Lokasi User</h2>
+        <div class="gauge">
+			    <img src="images/map-itera.png">
+		</div>
+        <center>	
+            <div class="tombol">
+                <button style="background-color: green">Lacak Lokasi</button>
+                <button style="background-color: red">Laporkan Kondisi User</button>
+            </div>
+        </center>
+	</div>
+</body>
+</html>

@@ -1,19 +1,26 @@
-const exspress = require('express');
-const app = exspress();
+const express = require('express');
+const app = express();
+const { spawn } = require("child_process");
 
-app.get('./chatbot', invokePythonTranslator)
+app.get('/chatbot', invokePythonTranslator);
 
-function invokePythonTranslator(req, res)
-{
-    var spawn = require("child_process").spawn;
-    var process = spawn('python', [
-        "./chatbot.py"
+function invokePythonTranslator(req, res) {
+    const process = spawn('python', [
+        "./chatbot.py",
         req.query.text
     ]);
-    process.stdout.on('data', function(data){
-        res.send(data.tostring());
-    })
-}.listen(8080);
+    let output = "";
 
-console.log("Please wait..");
-console.log("Server running di http://localhost:8080");
+    process.stdout.on('data', function(data) {
+        output += data.toString();
+    });
+
+    process.stdout.on('end', function() {
+        res.send(output);
+    });
+}
+
+app.listen(3020, function() {
+    console.log("Please wait..");
+    console.log("Server running at http://localhost:3020");
+});

@@ -3,7 +3,7 @@ let jsonfile = require('jsonfile');
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: '#Madeagusandi446***',
     database: 'praktek_chatbot'
 });
 var categoriId, productName;
