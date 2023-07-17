@@ -1,0 +1,92 @@
+body{
+	margin: 0;
+	background-image: linear-gradient(rgba(253, 253, 253, 0.5), rgba(255, 255, 255, 0.5));
+	background-size: 100%;
+}
+
+header{
+	height: 65px;
+	width: 100%;
+	background-color: rgba(30, 127, 160, 0.9);
+	position: fixed;
+	z-index: 10;
+}
+
+header h1{
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+.top-wrapper{
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	color: rgb(0, 0, 0);
+}
+
+.top-wrapper h3{
+	text-align: center;
+}
+
+.progress{
+	height: 30px;
+	width: 100%;
+	background-color: #e3dfde;
+	border-radius: 33px;
+	position: relative;
+	color: rgb(0, 168, 247);
+}
+
+.value{
+	background-color: rgb(134, 158, 238);
+	display: inline-block;
+	height: 100%;
+	border-radius: 33px
+}
+
+.progress::before{
+	content: attr(data-label);
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 5px;
+}
+
+hr{
+	margin-top: 30px;
+	padding-top: 10px;
+	background-color: black;
+}
+
+button{
+	padding: 12px 24px;
+	color: white;
+	opacity: 0.8;
+	border-radius: 44px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.tombol{
+	text-align: center;
+}
+
+img{
+	width: 10%;
+	height: auto;
+}
+
+.indicator{
+	margin-top: 20px;
+	text-align: center;
+}
+
+table {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: rgb(223, 12, 12);
+  }
